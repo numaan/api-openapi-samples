@@ -9,4 +9,4 @@ spec:
   type: openapi
   lifecycle: production
   owner: guest
-  definition: "https://raw.githubusercontent.com/numaan/api-openapi-samples/main/openapi.json"  # Must be a string URL
+  definition: "https://github.com/numaan/api-openapi-samples/blob/master/openapi-v3/api-example.yaml"  # Must be a string URL
