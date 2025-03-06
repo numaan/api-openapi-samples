@@ -1,4 +1,4 @@
-# This is the main catalog-info.yaml file for your root directory
+# Combined catalog-info.yaml file for your root directory
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
@@ -15,3 +15,43 @@ spec:
     - petstore-api
     - ecommerce-api
     # Add other APIs here as you create their definitions
+---
+# Petstore API Definition
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: petstore-api
+  description: Petstore API sample using OpenAPI v3
+  tags:
+    - rest
+    - openapi
+    - sample
+  annotations:
+    backstage.io/techdocs-ref: dir:./docs
+    github.com/project-slug: numaan/api-openapi-samples
+spec:
+  type: openapi
+  lifecycle: production
+  owner: team-apis
+  definition:
+    $text: ./openapi-v3/petstore.yaml
+---
+# E-commerce API Definition
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: ecommerce-api
+  description: E-commerce API sample using OpenAPI v3
+  tags:
+    - rest
+    - openapi
+    - ecommerce
+  annotations:
+    backstage.io/techdocs-ref: dir:./docs
+    github.com/project-slug: numaan/api-openapi-samples
+spec:
+  type: openapi
+  lifecycle: production
+  owner: team-product
+  definition:
+    $text: ./openapi-v3/ecommerce.yaml
