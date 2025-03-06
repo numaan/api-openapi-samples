@@ -2,9 +2,10 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: api-openapi-samples
-  owner: guest
+ 
   annotations:
     github.com/project-slug: numaan/api-openapi-samples
 spec:
   type: other
+   owner: guest
   lifecycle: unknown
