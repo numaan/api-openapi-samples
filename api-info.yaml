@@ -9,4 +9,4 @@ spec:
   type: openapi
   lifecycle: production
   owner: guest
-  definition: "https://raw.githubusercontent.com/numaan/api-openapi-samples/main/openapi.json"  # This should be a string, not an object
+  definition: "https://raw.githubusercontent.com/numaan/api-openapi-samples/main/openapi.json" 
