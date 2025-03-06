@@ -1,12 +1,17 @@
+# This is the main catalog-info.yaml file for your root directory
 apiVersion: backstage.io/v1alpha1
-kind: API
+kind: Component
 metadata:
   name: api-openapi-samples
-  description: Sample API with OpenAPI Specification
+  description: Collection of OpenAPI sample definitions
   annotations:
+    backstage.io/techdocs-ref: dir:.
     github.com/project-slug: numaan/api-openapi-samples
 spec:
-  type: openapi
+  type: service
+  owner: team-apis
   lifecycle: production
-  owner: guest
-  definition: "https://raw.githubusercontent.com/numaan/api-openapi-samples/refs/heads/master/openapi-v3/api-example.yaml"  # Must be a string URL
+  providesApis:
+    - petstore-api
+    - ecommerce-api
+    # Add other APIs here as you create their definitions
