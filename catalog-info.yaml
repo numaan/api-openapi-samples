@@ -34,7 +34,7 @@ spec:
   lifecycle: production
   owner: team-apis
   definition:
-    $text: ./openapi-v3/petstore.yaml
+    $text: ./openapi-v3/api-example.yaml
 ---
 # E-commerce API Definition
 apiVersion: backstage.io/v1alpha1
@@ -54,4 +54,4 @@ spec:
   lifecycle: production
   owner: team-product
   definition:
-    $text: ./openapi-v3/ecommerce.yaml
+    $text: ./openapi-v3/marketplace-catalog.yml
