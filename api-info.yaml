@@ -2,11 +2,11 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: api-openapi-samples
+  description: Sample API with OpenAPI Specification
   annotations:
     github.com/project-slug: numaan/api-openapi-samples
 spec:
   type: openapi
   lifecycle: production
   owner: guest
-  definition:
-    url: https://raw.githubusercontent.com/numaan/api-openapi-samples/main/openapi.json
+  definition: "https://raw.githubusercontent.com/numaan/api-openapi-samples/main/openapi.json"  # This should be a string, not an object
