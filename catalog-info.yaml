@@ -7,5 +7,5 @@ metadata:
     github.com/project-slug: numaan/api-openapi-samples
 spec:
   type: other
-   owner: guest
+  owner: guest
   lifecycle: unknown
